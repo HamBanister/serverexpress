@@ -42,16 +42,24 @@ body {
 }
 
 .toll-free h2 {
-    font-size: 1.8rem;
+    font-size: 2.2rem;
+    font-weight: 900;
     margin-bottom: 5px;
     color: #fff;
     cursor: pointer;
     text-decoration: none;
-    transition: opacity 0.3s ease;
+    transition: all 0.3s ease;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 10px 20px;
+    border-radius: 8px;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 .toll-free h2:hover {
-    opacity: 0.8;
+    background: rgba(255, 255, 255, 0.3);
+    transform: scale(1.05);
+    border-color: rgba(255, 255, 255, 0.5);
 }
 
 .toll-free p {
@@ -235,9 +243,10 @@ body {
     }
     
     .toll-free h2 {
-        font-size: 1.3rem;
+        font-size: 1.6rem;
         line-height: 1.2;
         white-space: nowrap;
+        padding: 8px 15px;
     }
     
     .toll-free p {
