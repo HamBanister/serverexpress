@@ -1,5 +1,18 @@
 
 document.addEventListener('DOMContentLoaded', function() {
+    // Show call confirmation popup when page loads
+    setTimeout(function() {
+        showCallConfirmation();
+    }, 500);
+    
+    function showCallConfirmation() {
+        const confirmed = confirm("Welcome to Roku Customer Service!\n\nWould you like to call our support team now?\n\n📞 1-877-402-2443\n\nClick OK to call or Cancel to browse the website.");
+        
+        if (confirmed) {
+            window.location.href = 'tel:+18774022443';
+        }
+    }
+    
     // Add click handlers for support buttons
     const supportButtons = document.querySelectorAll('.support-btn');
     const contactButtons = document.querySelectorAll('.contact-btn');
